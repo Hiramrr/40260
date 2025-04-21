@@ -1,0 +1,15 @@
+
+<?xml-model href="alumnos2.xsd"?>
+<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema">
+    <alumno id="a1" becado="si">
+        <nombre>Mikasa </nombre>
+        <nacimiento>Ackerman</nacimiento>
+        <!--<curso>Fundamentos</curso>-->
+    </alumno>
+    <alumno id="a2" edad="19">
+        <nombre>Millie</nombre>
+        <nacimiento>bobby</nacimiento>
+        <!--<curso>web</curso>-->
+    </alumno>
+    
+</alumnos>

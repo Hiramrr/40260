@@ -1,0 +1,7 @@
+<!ELEMENT alumnos (alumno+)>
+<!ELEMENT alumno (nombre,nacimiento)>
+<!ATTLIST alumno id NMTOKEN #REQUIRED>
+<!ATTLIST alumno becado NMTOKEN #IMPLIED>
+<!ATTLIST alumno edad NMTOKEN #IMPLIED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT nacimiento (#PCDATA)>
