@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            box-shadow: 10px 10px 20px rgb(146, 215, 238);
+        }
+        figure {
+            text-align: center;
+            width: 300px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- <figure>
+        <img src="https://picsum.photos/id/1/200/200" alt="">
+        <figcaption>
+            john
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="https://picsum.photos/id/2/200/200" alt="">
+        <figcaption>
+            jane
+        </figcaption>
+    </figure> -->
+
+    <div id="demo"></div>
+
+    <script>
+        let ejemplo = document.getElementById("demo");
+        console.log(ejemplo);
+
+        function imagen(id){
+            const componente =
+            "<figure>" +
+            "<img src=\"https://picsum.photos/id/" + id  + "/200/200\" alt=\"\">" +
+            "<figcaption>" +
+            "john" +
+            "</figcaption>" +
+            "</figure>";
+
+            return componente;
+        }
+        
+        const Picture = (id)=>{
+            return `
+            <figure>
+            <img src=\"https://picsum.photos/id/${id}/200/200\" alt=\"\">
+            <figcaption>john</figcaption>
+            </figure>
+            `
+        };
+        
+        // ejemplo.innerHTML = "hola" + imagen(0) + imagen(1084);
+        ejemplo.innerHTML = "hola" + Picture (2);
+    </script>
+</body>
+</html>
