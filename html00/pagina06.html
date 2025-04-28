@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            box-shadow: 10px 10px 20px rgba(250, 72, 179, 0.341);
+            border-radius: 100%;
+        }
+        figure{
+            text-align: center;
+            width: 300px;
+            display: inline-block;
+        }
+        img.redonda{
+            border-radius: 10% 40% 30% 70%;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        const picture = (id,name) =>{
+            const url = `https://picsum.photos/id/${id}/200/200`
+            const url2 = `wow.jpeg`
+            return `
+                <figure>
+            <img src="${url2}" alt="" class="redonda">
+            <figcaption>${name}</figcaption>
+            </figure>
+            `
+        } 
+        let x = document.getElementById('app').innerHTML = picture(1,"Miyu") + picture(2,"Coco")
+        
+        const lista = app.querySelectorAll("img");
+        console.log(lista);
+        for (let i = 0; i < lista.length; i++) {
+            //lista[i].addEventListener("click", saludar)
+            lista[i].addEventListener("click", ()=>{
+                lista[i].classList.toggle("redonda")
+            })
+        }
+
+        function saludar() {
+            alert("Miyualertaaaaaaaaa")
+        }
+    </script>
+</body>
+</html>
