@@ -18,7 +18,7 @@ fieldset{
 
 fieldset.principal{
     max-width: 400px;
-    box-shadow: 15px 20px 10px rgba(0, 0, 0, 0.472);
+    box-shadow: 15px 20px 10px rgba(1, 14, 27, 0.472);
     margin: 0 auto;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -58,7 +58,7 @@ input[type="submit"],[type="button"]{
     cursor: pointer;
 }
 
-input[type="submit"]:hover{
+input[type="submit"], [type="button"]:hover{
     width: 100%;
     padding: 10px;
     background-color: #004494;
