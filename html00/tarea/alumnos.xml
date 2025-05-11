@@ -1,0 +1,18 @@
+<alumnos>
+    <alumno correo="Miyu@gmail.com">
+        <nombre>Jazmin</nombre>
+        <nacimiento>0835-03-30</nacimiento>
+    </alumno>
+    <alumno correo="aaaa@gmail.com">
+        <nombre>Blanca</nombre>
+        <nacimiento>0835-03-30</nacimiento>
+    </alumno>
+    <alumno correo="www@gmail.com">
+        <nombre>Coco</nombre>
+        <nacimiento>0835-03-30</nacimiento>
+    </alumno>
+    <alumno correo="coco@gmail.com">
+        <nombre>Miyu</nombre>
+        <nacimiento>0835-03-30</nacimiento>
+    </alumno>
+</alumnos>
